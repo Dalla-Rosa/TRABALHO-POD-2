@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MEMORY_LIMIT 5
+
+int main(){
+    
+    int test[] = {3,4,61,21};
+
+    //criar arquivos (teste/final)
+    FILE arquivosTemp[MEMORY_LIMIT];
+    
+    for (int i = 0; i < MEMORY_LIMIT; i++)
+    {
+        char* nome;
+        sprintf(nome, "arq%d.txt", i+1);
+        arquivoTemp[i] = fopen (nome, "w+")
+    }
+    
+    FILE* arq1 = fopen ("teste.txt", "arq");
+    if (arq1 == NULL) {
+        printf("Erro na abertura do arquivo!");
+        exit(1); //abortar programa
+    }      
+    // pegar 5 numeros e inserir numa array
+
+    // ordenar a array temp
+
+    // inserir no arquivo temp
+
+    // inserir no arquivo final, comparando os 5 arquivops temp
+
+    //fechar arquivos
+}
+
